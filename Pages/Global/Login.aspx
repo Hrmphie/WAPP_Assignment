@@ -132,6 +132,7 @@
             <div class="form-group">
                 <label class="form-label">Username</label>
                 <asp:TextBox ID="txtUsername" runat="server" CssClass="form-input" placeholder="Enter your username"></asp:TextBox>
+                <br />
                 <asp:RequiredFieldValidator ID="rfvUsername" runat="server" 
                     ControlToValidate="txtUsername" 
                     ErrorMessage="Username is required" 
@@ -144,6 +145,7 @@
             <div class="form-group">
                 <label class="form-label">Password</label>
                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-input" placeholder="Enter your password"></asp:TextBox>
+                <br />
                 <asp:RequiredFieldValidator ID="rfvPassword" runat="server" 
                     ControlToValidate="txtPassword" 
                     ErrorMessage="Password is required" 

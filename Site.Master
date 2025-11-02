@@ -44,13 +44,11 @@
             align-items: center;
             gap: 15px;
         }
-
+           
         .logo-img {
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background: white;
-            padding: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
         }
 
@@ -148,8 +146,6 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: white;
-            padding: 6px;
         }
 
         .footer-text {
@@ -219,7 +215,7 @@
         <!-- Header Section -->
         <header class="header">
             <div class="logo-section">
-                <img src="https://via.placeholder.com/60/ff6b6b/ffffff?text=MV" alt="MathVenture Logo" class="logo-img" />
+                <img src="~/Content/images/MathVenture.png" alt="MathVenture Logo" class="logo-img" runat="server"/>
                 <span class="site-name">MathVenture</span>
             </div>
             
@@ -234,7 +230,7 @@
         <!-- Main Content Area -->
         <div class="main-content">
             <div class="content-wrapper">
-                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">    
                 </asp:ContentPlaceHolder>
             </div>
         </div>
@@ -243,7 +239,7 @@
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="https://via.placeholder.com/50/4facfe/ffffff?text=MV" alt="MathVenture Logo" class="footer-logo-img" />
+                    <img src="~/Content/images/MathVenture.png" alt="MathVenture Logo" class="footer-logo-img" runat="server"/>
                     <span class="footer-text">MathVenture</span>
                 </div>
                 <div class="footer-info">

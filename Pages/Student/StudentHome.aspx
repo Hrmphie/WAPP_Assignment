@@ -20,57 +20,6 @@
             margin-bottom: 30px;
         }
 
-        .progress-section {
-            margin: 30px auto;
-            max-width: 600px;
-        }
-
-        .progress-title {
-            font-size: 22px;
-            color: #333;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .progress-bar-container {
-            background: #e0e0e0;
-            border-radius: 25px;
-            height: 40px;
-            overflow: hidden;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: transform 0.2s;
-            position: relative;
-        }
-
-        .progress-bar-container:hover {
-            transform: scale(1.02);
-        }
-
-        .progress-bar-fill {
-            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
-            height: 100%;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: width 0.5s ease;
-            min-width: 50px;
-        }
-
-        .progress-percentage {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            line-height: 40px;
-            font-weight: bold;
-            color: #333;
-            z-index: 1;
-        }
-
         .buttons-container {
             display: flex;
             gap: 40px;
@@ -125,6 +74,64 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        /* Progress Section */
+        .progress-section {
+            margin: 40px 0;
+            display: flex;             
+            flex-direction: column;
+            align-items: center;     
+            justify-content: center;  
+            text-align: center;
+        }
+
+        .progress-title {
+            font-size: 28px;
+            color: #667eea;
+            margin-bottom: 18px;
+            font-weight: bold;
+        }
+
+
+        .progress-bar-container {
+            width: 100%;
+            max-width: 500px;       
+            height: 50px;
+            background: #e0e0e0;
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+            display: block;
+            text-decoration: none;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 25px;
+            width: 0%;                
+            transition: width 0.6s ease;
+        }
+
+        .progress-percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .progress-bar-container:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: scale(1.02);
+        }
+
         @media (max-width: 968px) {
             .buttons-container {
                 flex-direction: column;
@@ -145,12 +152,14 @@
         <!-- Progress Section -->
         <div class="progress-section">
             <h2 class="progress-title">Your Learning Progress</h2>
-            <asp:LinkButton ID="lnkProgress" runat="server" CssClass="progress-bar-container" OnClick="lnkProgress_Click">
+
+            <asp:LinkButton ID="lnkProgress" runat="server"
+                            CssClass="progress-bar-container"
+                            OnClick="lnkProgress_Click">
                 <div class="progress-percentage">
                     <asp:Label ID="lblProgressPercentage" runat="server" Text="0%"></asp:Label>
                 </div>
-                <div class="progress-bar-fill" id="progressBarFill" runat="server" style="width: 0%;">
-                </div>
+                <div class="progress-bar-fill" id="progressBarFill" runat="server"></div>
             </asp:LinkButton>
         </div>
 
@@ -159,13 +168,13 @@
             <!-- Lessons Button -->
             <asp:LinkButton ID="btnLessons" runat="server" CssClass="nav-button btn-lessons" OnClick="btnLessons_Click">
                 <span class="button-label">Lessons</span>
-                <img src="https://via.placeholder.com/200/f5576c/ffffff?text=📚" alt="Lessons" class="button-image" />
+                <img src="../../Content/images/lessons.jpg" alt="Lessons" class="button-image" />
             </asp:LinkButton>
 
             <!-- Quizzes Button -->
             <asp:LinkButton ID="btnQuizzes" runat="server" CssClass="nav-button btn-quizzes" OnClick="btnQuizzes_Click">
                 <span class="button-label">Quizzes</span>
-                <img src="https://via.placeholder.com/200/00f2fe/ffffff?text=✏️" alt="Quizzes" class="button-image" />
+                <img src="../../Content/images/quizzes.jpg" alt="Quizzes" class="button-image" />
             </asp:LinkButton>
         </div>
     </div>
