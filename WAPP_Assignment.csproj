@@ -250,28 +250,24 @@
     </Compile>
     <Compile Include="Pages\Admin\ManageLessonsLevel.aspx.cs">
       <DependentUpon>ManageLessonsLevel.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Admin\ManageLessonsLevel.aspx.designer.cs">
       <DependentUpon>ManageLessonsLevel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Admin\ManageLessonsPage.aspx.cs">
       <DependentUpon>ManageLessonsPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Admin\ManageLessonsPage.aspx.designer.cs">
       <DependentUpon>ManageLessonsPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Admin\ManageQuizzesLevel.aspx.cs">
       <DependentUpon>ManageQuizzesLevel.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Admin\ManageQuizzesLevel.aspx.designer.cs">
       <DependentUpon>ManageQuizzesLevel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Admin\ManageQuizzesPage.aspx.cs">
       <DependentUpon>ManageQuizzesPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Admin\ManageQuizzesPage.aspx.designer.cs">
       <DependentUpon>ManageQuizzesPage.aspx</DependentUpon>
