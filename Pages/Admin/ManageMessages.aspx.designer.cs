@@ -11,52 +11,43 @@ namespace WAPP_Assignment.Pages.Admin
 {
 
 
-    public partial class ManageUsers
+    public partial class ManageMessages
     {
 
         /// <summary>
-        /// lblTotalUsers control.
+        /// lblTotalMessages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTotalUsers;
+        protected global::System.Web.UI.WebControls.Label lblTotalMessages;
 
         /// <summary>
-        /// lnkRegisterNew control.
+        /// pnlMessagesList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkRegisterNew;
+        protected global::System.Web.UI.WebControls.Panel pnlMessagesList;
 
         /// <summary>
-        /// pnlUsersList control.
+        /// rptMessages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlUsersList;
+        protected global::System.Web.UI.WebControls.Repeater rptMessages;
 
         /// <summary>
-        /// rptUsers control.
+        /// pnlNoMessages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptUsers;
-
-        /// <summary>
-        /// pnlNoUsers control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlNoUsers;
+        protected global::System.Web.UI.WebControls.Panel pnlNoMessages;
     }
 }

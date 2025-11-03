@@ -223,7 +223,7 @@
                 <asp:HyperLink ID="lnkHome" runat="server" CssClass="nav-link" Text="Home" />
                 <asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="~/Pages/Global/About.aspx" CssClass="nav-link" Text="About" />
                 <asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/Pages/Global/Contact.aspx" CssClass="nav-link" Text="Contact" />
-                <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="logout-btn" OnClick="btnLogout_Click" Visible="false" />
+                <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="logout-btn" OnClick="btnLogout_Click" Visible="false" CausesValidation="false" />
             </nav>
         </header>
 

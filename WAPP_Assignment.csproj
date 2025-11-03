@@ -126,12 +126,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Admin\AdminHome.aspx" />
-    <Content Include="Pages\Admin\ManageLessonsLevel.aspx" />
-    <Content Include="Pages\Admin\ManageLessonsPage.aspx" />
-    <Content Include="Pages\Admin\ManageQuizzesLevel.aspx" />
-    <Content Include="Pages\Admin\ManageQuizzesPage.aspx" />
     <Content Include="Pages\Admin\ManageUsers.aspx" />
     <Content Include="Pages\Admin\ViewUser.aspx" />
+    <Content Include="Pages\Admin\ManageMessages.aspx" />
     <Content Include="Pages\Global\About.aspx" />
     <Content Include="Pages\Global\Contact.aspx" />
     <Content Include="Pages\Global\Login.aspx" />
@@ -248,30 +245,6 @@
     <Compile Include="Pages\Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Admin\ManageLessonsLevel.aspx.cs">
-      <DependentUpon>ManageLessonsLevel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Admin\ManageLessonsLevel.aspx.designer.cs">
-      <DependentUpon>ManageLessonsLevel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Admin\ManageLessonsPage.aspx.cs">
-      <DependentUpon>ManageLessonsPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Admin\ManageLessonsPage.aspx.designer.cs">
-      <DependentUpon>ManageLessonsPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Admin\ManageQuizzesLevel.aspx.cs">
-      <DependentUpon>ManageQuizzesLevel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Admin\ManageQuizzesLevel.aspx.designer.cs">
-      <DependentUpon>ManageQuizzesLevel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Admin\ManageQuizzesPage.aspx.cs">
-      <DependentUpon>ManageQuizzesPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Admin\ManageQuizzesPage.aspx.designer.cs">
-      <DependentUpon>ManageQuizzesPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Admin\ManageUsers.aspx.cs">
       <DependentUpon>ManageUsers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -285,6 +258,13 @@
     </Compile>
     <Compile Include="Pages\Admin\ViewUser.aspx.designer.cs">
       <DependentUpon>ViewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\ManageMessages.aspx.cs">
+      <DependentUpon>ManageMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\ManageMessages.aspx.designer.cs">
+      <DependentUpon>ManageMessages.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Global\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
