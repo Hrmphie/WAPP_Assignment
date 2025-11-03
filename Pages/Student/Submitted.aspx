@@ -110,7 +110,7 @@
 
         <p class="success-message">Great job on completing the quiz!</p>
 
-        <img src="https://via.placeholder.com/300/2ecc71/ffffff?text=🌟" alt="Success" class="success-image" />
+        <img src="../../Content/images/celebrate.jpg" alt="Success" class="success-image" />
 
         <asp:Button ID="btnReturnHome" runat="server" Text="🏠 Return Home" CssClass="home-button" OnClick="btnReturnHome_Click" />
     </div>
