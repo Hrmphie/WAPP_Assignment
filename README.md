@@ -1077,7 +1077,3 @@ The system uses a sophisticated progress calculation that:
 - Guest sessions use special UserID (-1)
 
 ---
-
-## End of Documentation
-
-This document provides a comprehensive overview of all workflows in the MathVenture system. For implementation details, refer to the source code files referenced throughout this document.
